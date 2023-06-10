@@ -1,0 +1,95 @@
+
+.background-image {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 450px;
+  background-image: url("imageBg.png");
+  background-size: cover;
+  background-position: right top;
+  z-index: -1;
+}
+
+body-background{
+        color:#cdcdcd;
+     }
+
+    .centered-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .submitButton{
+        position: absolute;
+        top: 450px; /* Y coordinate */
+        left: 450px; /* X coordinate */
+        width: 400px;
+        height: 40px;
+        background-color:#15d317;
+    }
+
+    button{
+        font-size:20px;
+        font-family:Montserrat;
+    }
+
+    .textBox{
+        position: absolute;
+        top: 250px; /* Y coordinate */
+        left: 520px; /* X coordinate */
+        width: 250px;
+        height: 40px;
+    }
+
+    .result{
+           position: absolute;
+        top: 300px;
+        left: 525px;
+       color: #FF0000;
+       font-size:20px;
+        font-family:Montserrat;
+
+    }
+
+
+    input {
+  font-size: 16px;
+  line-height: 24px;
+  color: #353740;
+  font-family: "ColfaxAI", Helvetica, sans-serif;
+    }
+
+        input[type="submit"] {
+        padding: 12px 0;
+        color: #fff;
+        background-color: #10a37f;
+         border: none;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+        margin-top:10px;
+        margin-left:75px;
+        width:500px;
+        }
+
+
+ .buttons1{
+    margin-left:110px;
+    margin-top:20px;
+ }
+
+.buttons2{
+    margin-left:120px;
+ }
+
+
+
+
+
+
+
+
+
