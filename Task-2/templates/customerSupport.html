@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <title>Customer Support</title>
+
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='care.png') }}"
+  />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+  <img src="{{ url_for('static', filename='care.png') }}" class="icon" height="70px" width="65px"/>
+  <h3>Solve my Issue</h3>
+  <form action="/" method="post">
+      <input type="hidden" name="queryType" value="customerSupport">
+      <input type="text" name="appliance" placeholder="Enter appliance's name" required />
+      <input type="text" name="brand" placeholder="Enter brand of appliance"  required />
+      <textarea name="issue" placeholder="Enter your complaint" rows="4" cols="50" required ></textarea>
+    <input type="submit" value="Get Assistance from Jarvis" />
+  </form>
+
+  {% if intro %}
+  <div class="result">{{ intro }}</div>
+  {% endif %}
+
+  {% if result1 %}
+  <div class="result">{{ result1 }}</div>
+  {% endif %}
+
+ {% if result2 %}
+  <div class="result">{{ result2 }}</div>
+  {% endif %}
+ {% if result3 %}
+  <div class="result">{{ result3 }}</div>
+  {% endif %}
+
+
+</body>

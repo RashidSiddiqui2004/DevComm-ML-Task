@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatBot</title>
+
+    <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='bot.png') }}"
+  />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="static/styles2.css">
+
+    <style>
+
+
+    </style>
+
+</head>
+
+<body>
+
+<!--navbar-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="static/bot.png" alt="Company Logo" width="50" height="50">  ChatBot -Jarvis
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Types of Bots
+          </a>
+          <ul class="dropdown-menu">
+<!--             <option value="templates/companyName.html">Example Website</option>-->
+            <li><a class="dropdown-item" href="#">Company Name Suggestor</a></li>
+            <li><a class="dropdown-item" href="#">Pet Name Suggestor</a></li>
+            <li><a class="dropdown-item" href="#">Store Name Suggestor</a></li>
+            <li><a class="dropdown-item" href="#">SuperHero Name Suggestor</a></li>
+
+          </ul>
+        </li>
+
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+{% if result %}
+  <div class="result">{{ result }}</div>
+  {% endif %}
+
+<div class="background-image"></div>
+
+<div class="centered-form">
+    <form action="/" method="post">
+
+      <input type="hidden" name="modelSelection"  value="modelSelection">
+
+      <input type="text" name="model" id="model2" class="textBox" style="font-weight:600; text-align:center" placeholder="Select the model to Use:" required />
+
+        <br>
+
+<!--        <h4>Please click on the buttons below to utilize different chatbots:</h4>-->
+
+        <h4 style="margin-left:70px; margin-top:10px;">Please select a chatbot to get started</h4>
+
+        <div class="buttons1">
+
+            <button type="button" onclick="fillCompany()" >Company Name</button>
+            <button type="button" onclick="fillStore()">Store Name</button>
+            <button type="button" onclick="fillPetName()">Pet Name</button>
+
+        </div>
+        <br>
+        <div class ="buttons2">
+            <button type="button" onclick="fillHero()">SuperHero Name</button>
+            <button type="button" onclick="fillCustomerCare()">Customer Care</button>
+        </div>
+
+        <br>
+
+        <input type="submit" value="Get Assistance from Jarvis" />
+<!--        <input type="submit" class="submitButton" style="font-size:25px" value="Generate names" />-->
+
+    </form>
+</div>
+
+
+
+<script>
+function fillCompany() {
+  var nameField = document.getElementById("model2");
+  nameField.value = "Company Name";
+}
+function fillStore() {
+  var nameField = document.getElementById("model2");
+  nameField.value = "Store Name";
+}
+function fillPetName() {
+  var nameField = document.getElementById("model2");
+  nameField.value = "Pet Name";
+}
+function fillHero() {
+  var nameField = document.getElementById("model2");
+  nameField.value = "Superhero Name";
+}
+
+function fillCustomerCare() {
+  var nameField = document.getElementById("model2");
+  nameField.value = "Customer Care";
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
