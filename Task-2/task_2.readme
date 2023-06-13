@@ -1,0 +1,43 @@
+Chatbot Project
+This project is a chatbot implementation using the OpenAI API for various task-specific purposes, including name suggestion, customer service, and doubt resolution.
+
+Overview
+The chatbot project aims to leverage the power of Deep Learning and the OpenAI API to create intelligent conversational agents. By utilizing the OpenAI API, the chatbot can generate human-like responses to user inputs.
+
+Features
+The implemented chatbot system includes the following task-specific chatbots:
+
+Name Suggesting Chatbot: A chatbot that provides suggestions for names based on given criteria or preferences.
+
+Customer Service Chatbot: A chatbot designed to assist users with common customer service inquiries and support requests.
+
+Doubt Resolver Chatbot: A chatbot capable of answering questions and resolving doubts related to specific topics, such as computer science concepts.
+
+Technologies Used
+The chatbot project primarily utilizes the following technologies:
+
+OpenAI API: The OpenAI API is used for natural language processing and generating chatbot responses.
+
+Programming Language: Python is used as the primary programming language for implementing the chatbot system.
+
+Usage
+To use the chatbot system, follow these steps:
+
+Set up OpenAI API: Obtain an API key from OpenAI and configure it in the project.
+
+Install Dependencies: Install the required Python dependencies by running pip install -r requirements.txt.
+
+Run the Chatbot: Execute the main script, such as python main.py, to start the chatbot system.
+Use the command - flask run.
+
+Interact with the Chatbot: Enter user inputs or queries in the command line interface and observe the chatbot's responses.
+
+Contributions
+Contributions to the chatbot project are welcome. If you have any suggestions, bug reports, or feature requests, please create an issue or submit a pull request.
+
+License
+MIT License
+
+Acknowledgments
+The project was developed as part of the Deep Learning course.
+Special thanks to the OpenAI team for providing the powerful API and tools for natural language processing.
