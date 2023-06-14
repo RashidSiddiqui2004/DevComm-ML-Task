@@ -1,5 +1,6 @@
 Chatbot Project
-This project is a chatbot implementation using the OpenAI API for various task-specific purposes, including name suggestion, customer service, and doubt resolution.
+This project is a chatbot implementation using the OpenAI API for various task-specific purposes, including name suggestion (Company name, store name,
+pet name,Superhero name), customer service, and doubt resolution.
 
 Overview
 The chatbot project aims to leverage the power of Deep Learning and the OpenAI API to create intelligent conversational agents. By utilizing the OpenAI API, the chatbot can generate human-like responses to user inputs.
