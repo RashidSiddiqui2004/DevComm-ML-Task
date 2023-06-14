@@ -26,7 +26,7 @@ Future Work:
 - Continual model monitoring and updates are crucial to ensure the robustness and reliability of the hazard classification system as new data becomes available.
 
 By addressing the problem of identifying hazardous asteroids through various SVM models and other important models, we have made significant progress in mitigating
-the risks associated with near-Earth objects. Our findings contribute to the broader field of space exploration and help in protecting our planet.
+the risks associated with near-Earth objects.
 
 
 
