@@ -4,20 +4,23 @@
   <title>SuperHero Suggester</title>
   <link
     rel="shortcut icon"
-    href="{{ url_for('static', filename='dog.png') }}"
+    href="{{ url_for('static', filename='superhero.jpg') }}"
   />
   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
 </head>
 
 <body>
-  <img src="{{ url_for('static', filename='dog.png') }}" class="icon" />
+  <img src="{{ url_for('static', filename='superhero.jpg') }}" class="icon" style="height:120px; width:120px" />
+
+  <div class="background-image"></div>
+
   <h3>Name my Super Hero</h3>
   <form action="/" method="post">
-      <input type="hidden" name="queryType" value="superhero">
-      <input type="text" name="gender" placeholder="Enter the gender of SuperHero (Male/Female)" required />
-      <input type="text" name="actualName" placeholder="Enter the Name of man behind superhero" required />
-      <input type="text" name="powers" placeholder="Enter the powers of your SuperHero" required />
-      <input type="text" name="Job" placeholder="What is he pursuing in his/her normal life" required />
+      <input type="hidden" name="queryType" style="width:400px"  value="superhero">
+      <input type="text" name="gender" style="width:400px"  placeholder="Enter the gender of SuperHero (Male/Female)" required />
+      <input type="text" name="actualName" style="width:400px"  placeholder="Enter the Name of man behind superhero" required />
+      <input type="text" name="powers" style="width:400px"  placeholder="Enter the powers of your SuperHero" required />
+      <input type="text" name="Job" style="width:400px"  placeholder="What is he pursuing in his/her normal life" required />
 
     <input type="submit" value="Generate names" />
   </form>

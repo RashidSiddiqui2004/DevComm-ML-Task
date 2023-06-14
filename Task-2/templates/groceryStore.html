@@ -3,18 +3,20 @@
   <title>Store Name</title>
   <link
     rel="shortcut icon"
-    href="{{ url_for('static', filename='dog.png') }}"
+    href="{{ url_for('static', filename='shop.jpg') }}"
   />
   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
 </head>
 
 <body>
-  <img src="{{ url_for('static', filename='dog.png') }}" class="icon" />
+  <img src="{{ url_for('static', filename='shop.jpg') }}" class="icon" style="height:140px; width:140px"/>
+
+  <div class="background-image"></div>
   <h3>Name my Store</h3>
   <form action="/" method="post">
       <input type="hidden" name="queryType" value="store">
-      <input type="text" name="ownerName" placeholder="Enter StoreOwner's name" required />
-      <input type="text" name="service" placeholder="Enter company's commodity/service provided" required />
+      <input type="text" name="ownerName" style="width:400px" placeholder="Enter StoreOwner's name" required />
+      <input type="text" name="service" style="width:400px" placeholder="Enter company's commodity/service provided" required />
     <input type="submit" value="Generate names" />
   </form>
   {% if result %}

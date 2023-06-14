@@ -12,6 +12,9 @@
 
 <body>
   <img src="{{ url_for('static', filename='care.png') }}" class="icon" height="70px" width="65px"/>
+
+  <div class="background-image"></div>
+
   <h3>Solve my Issue</h3>
   <form action="/" method="post">
       <input type="hidden" name="queryType" value="customerSupport">
@@ -35,6 +38,18 @@
  {% if result3 %}
   <div class="result">{{ result3 }}</div>
   {% endif %}
+
+<br><br><br><br><br>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+              <p>&copy; 2023 Solve Mate. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+  </footer>
 
 
 </body>
